@@ -22,9 +22,18 @@
 }
 
 /* обьединить переменные с одинаковыми цветами  */
-/* 
+
 @media (prefers-color-scheme: light) {
   :root {
+    --brand-color-main: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --text-color: #353430;
+    --page-background-color: ;
+    --button-color: #353430;
+    --title-color: #353430;
+    --shadow-color:  #ff0070;
+    --header-title-text: #353430; 
+    --background-img: url(../images/cover-image-light.png);
     --rec-decor-visibility: hidden;
   }
-} */
+}

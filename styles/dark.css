@@ -21,9 +21,18 @@
   --rec-decor-visibility: visible;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --rec-decor-visibility: visible;
+  --brand-color-main: #db00ff;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --button-color: #ff0070;
+  --shadow-color:  #ff0070;
+  --header-title-text: #000028;
+  --title-color: #ff0070;
+  --page-background-color: #000028;
+  --background-img: url(../images/cover-image-dark.png);
+  --rec-decor-visibility: visible;
   }
-} */
+}
 
