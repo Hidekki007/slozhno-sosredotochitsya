@@ -207,6 +207,14 @@
   row-gap: 20px;
 }
 
+.how_title {
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: var(--header-title-text);
+}
 
 .section_gallery {
   display: grid; 
@@ -259,7 +267,6 @@
 }
 
 .link_decor {
-  display: inline-block;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -377,6 +384,7 @@
   .gallery_list {
     display: flex;
     flex-direction: column;
+    gap: 10px; 
   }
 
   .section_gallery {
