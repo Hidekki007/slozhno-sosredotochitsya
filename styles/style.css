@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   background-image: var(--background-img);
   background-position: center;
@@ -53,7 +53,6 @@
   inline-size: 9px;
   block-size: 9px;
 }
-
 
 .decorated-zone::before,
 .decorated-zone::after {
@@ -165,6 +164,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  line-height: 23.4px;
   color:  var(--text-color);
 }
 
@@ -204,6 +204,7 @@
 .section_how {
   display: grid;
   grid-template-columns: 34% 1fr;
+  row-gap: 20px;
 }
 
 
@@ -258,27 +259,31 @@
 }
 
 .link_decor {
+  display: inline-block;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link_decor:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .link_decor:focus {
   outline: 1px solid var(--text-color);
 }
 
-.header__theme-menu-item:hover {
-  outline:  1px solid var(--text-color);
+.header__theme-menu-button:hover {
+  outline:  1px solid var( --button-hover);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
+.header__theme-menu-button_active:hover {
+  outline: none;
+}
 
 @media (width <= 790px) {
   
@@ -292,7 +297,6 @@
   }
     
   .header__theme-menu-list {
-   display: flex;
    flex-direction: column;
    gap: 13px;
   }
@@ -313,7 +317,6 @@
 
   .section_what {
     grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
-    gap: 20px;
   }
 
   .section-what__articles-list {
@@ -322,12 +325,11 @@
   }
 
   .section_how {
-    display: grid;
     grid-template-columns: 35% 1fr;}
 
 }
 
-@media (width <= 400px) {
+@media (width <= 500px) {
 
   .main {
     padding: 40px 10px;
@@ -340,15 +342,11 @@
   
   .header_title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    font-family: IBM Plex Mono;
-    font-weight: 700;
     line-height: 95.7px;
 
   }
 
   .title {
-    justify-self: end;
-    align-self: center;
     max-width: 355px;
     margin-block-end: 1%;
   }
